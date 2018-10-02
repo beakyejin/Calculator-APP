@@ -8,4 +8,48 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--상단-->
+    <!-- 상단  1: 1: 1 비율 부분 -->
+    <style name="TA_top_ratio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--상단 TextView -->
+    <style name="TA_top_between">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--하단-->
+    <style name="TA_bottm_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--하단 Left 버튼-->
+    <style name="TA_bottom_layout_left_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:onClick">clkLeftBtn</item>
+    </style>
+
+    <!--하단 Right 버튼-->
+    <style name="TA_bottm_layout_right_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:onClick">clkRightBtn</item>
+    </style>
+
+
 </resources>

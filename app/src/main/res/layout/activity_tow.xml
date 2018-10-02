@@ -5,11 +5,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TowActivity">
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--상단-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="계산기"/>
-    
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/TA_top_ratio"
+            android:maxLength="4"
+            android:id="@+id/et_no1" />
+        <TextView
+            style="@style/TA_top_between"
+            android:id="@+id/tv_calc" />
+        <EditText
+            style="@style/TA_top_ratio"
+            android:maxLength="4"
+            android:id="@+id/et_no2" />
+        <TextView
+            style="@style/TA_top_between"
+            android:text="="/>
+        <TextView
+            style="@style/TA_top_ratio"
+            android:maxLength="15"
+            android:id="@+id/tv_result" />
+
+    </LinearLayout>
+
+    <!--하단 3:1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <!--Left-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <!--Line 1-->
+            <LinearLayout
+                style="@style/TA_bottm_layout">
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn7"
+                    android:text="7"/>
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn8"
+                    android:text="8" />
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn9"
+                    android:text="9" />
+            </LinearLayout>
+
+            <!--Line 2-->
+            <LinearLayout
+                style="@style/TA_bottm_layout">
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn4"
+                    android:text="4"/>
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn5"
+                    android:text="5" />
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn6"
+                    android:text="6" />
+            </LinearLayout>
+
+            <!--Line 3-->
+            <LinearLayout
+                style="@style/TA_bottm_layout">
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn1"
+                    android:text="1"/>
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn2"
+                    android:text="2" />
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn3"
+                    android:text="3" />
+            </LinearLayout>
+
+            <!--Line 4-->
+            <LinearLayout
+                style="@style/TA_bottm_layout">
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:id="@+id/c_btn0"
+                    android:text="0"/>
+                <Button
+                    style="@style/TA_bottom_layout_left_btn"
+                    android:layout_weight="2"
+                    android:id="@+id/c_btn_re"
+                    android:text="="
+                    android:onClick="resultBtn"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Right-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                style="@style/TA_bottm_layout_right_btn"
+                android:text="C"/>
+            <Button
+                style="@style/TA_bottm_layout_right_btn"
+                android:text="/"/>
+            <Button
+                style="@style/TA_bottm_layout_right_btn"
+                android:text="*"/>
+            <Button
+                style="@style/TA_bottm_layout_right_btn"
+                android:text="-"/>
+            <Button
+                style="@style/TA_bottm_layout_right_btn"
+                android:text="+" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.user.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,10 @@ public class firstLayoutActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //이벤트 연결 확인 toast
                 Toast.makeText(firstLayoutActivity.this, "버튼1", Toast.LENGTH_SHORT).show();
+
+                //화면 이동하기
+                Intent intent = new Intent(firstLayoutActivity.this, TowActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -31,6 +36,9 @@ public class firstLayoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(firstLayoutActivity.this, "버튼2", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(firstLayoutActivity.this, ThreeActivity.class);
+                startActivity(intent);
             }
         });
     }
