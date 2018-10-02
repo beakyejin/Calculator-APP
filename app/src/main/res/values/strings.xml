@@ -3,4 +3,6 @@
     <string name="hello">안녕하세요! 한국it교육원 입니다.</string>
     <string name="myname">백예진</string>
     <string name="change">값 변경</string>
+    <string name="calc">계산기</string>
+    <string name="player">플레이어</string>
 </resources>
