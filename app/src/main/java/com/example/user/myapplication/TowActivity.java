@@ -56,12 +56,16 @@ public class TowActivity extends AppCompatActivity {
             Button b = (Button)v;
             String get_no1 = et_no1.getText().toString();
             String get_no2 = et_no2.getText().toString();
+            String get_calc = tv_calc.getText().toString();
+            String get_result = tv_result.getText().toString();
 
-            if(tv_calc.getText().toString().getBytes().length > 0){
+            if (get_calc.getBytes().length > 0) {
                 String str = b.getText().toString();
                 get_no2 += str;
-                et_no2.setText(get_no2);
-            }else{
+                if(!(get_result.getBytes().length>0)){
+                    et_no2.setText(get_no2);
+                }
+            } else {
                 String str = b.getText().toString();
                 get_no1 += str;
                 et_no1.setText(get_no1);
@@ -86,7 +90,7 @@ public class TowActivity extends AppCompatActivity {
 
             //둘 중에 하나라도 값이 -1이면 계산x(incomplement)
             if((n1 == -1) || (n2 == -1)){
-                tv_result.setText("incomplement");
+                tv_result.setText("incomplete");
             }else{
                 if(c.equals("/")){
                     //둘 중 하나라도 값이 0 이면 div0출력
