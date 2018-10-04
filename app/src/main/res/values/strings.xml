@@ -3,6 +3,14 @@
     <string name="hello">안녕하세요! 한국it교육원 입니다.</string>
     <string name="myname">백예진</string>
     <string name="change">값 변경</string>
+
     <string name="calc">계산기</string>
     <string name="player">플레이어</string>
+
+    <string name="music1">오마이걸-불꽃놀이</string>
+    <string name="music2">LSD-Thunderclouds</string>
+
+    <string name="stop">정지</string>
+    <string name="start">재생</string>
+    <string name="pause">일시정지</string>
 </resources>

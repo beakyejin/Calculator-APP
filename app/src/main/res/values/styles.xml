@@ -51,5 +51,13 @@
         <item name="android:onClick">clkRightBtn</item>
     </style>
 
+    <style name="ThrA_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:onClick">clkBtn</item>
+    </style>
+
 
 </resources>
