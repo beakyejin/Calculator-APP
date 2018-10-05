@@ -28,6 +28,7 @@ public class ThreeActivity extends AppCompatActivity {
             Log.i("test", b.getText().toString());
 
             if(b.getId() == R.id.music_1){
+
                 doStop();
                 mp = MediaPlayer.create(ThreeActivity.this, R.raw.ohmygirl_remember_me);
                 mp.start();
@@ -52,6 +53,12 @@ public class ThreeActivity extends AppCompatActivity {
                 }
             }else if(b.getId() == R.id.btn_2){
                 doStop();
+
+                String get_text = b.getText().toString();
+                if(get_text.equals(getString(R.string.pause))){
+                    //일시정지
+                    b.setText(R.string.start);
+                }
             }
         }
     }
